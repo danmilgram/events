@@ -13,3 +13,6 @@
 
 4. # RUN API
     python manage.py runserver
+
+# How to RUN TESTS
+    python manage.py test api/tests

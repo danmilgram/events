@@ -8,10 +8,6 @@ from django.contrib.auth.models import User as BaseUser, Group
 class User(BaseUser):
     type = models.CharField(max_length=2, choices=(('CU', 'Customer'),('BU', 'Bussiness')))
 
-class Item(models.Model):
-    name = models.CharField(max_length=200)
-    created = models.DateTimeField(auto_now_add=True)
-
 class Room(models.Model):
     name = models.CharField(max_length=200)
     capacity = models.IntegerField()

@@ -2,7 +2,7 @@ from rest_framework import serializers
 from rest_framework.validators import UniqueTogetherValidator
 
 from api.models import (
-    Item, Room, Event, Participant, User
+    Room, Event, Participant, User
 )
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
@@ -18,15 +18,10 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         return user    
 
 
-class ItemSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Item
-        fields = "__all__"
-
 class RoomSerializer(serializers.ModelSerializer):
     class Meta:
         model = Room
-        fields = "__all__"        
+        fields = "__all__"           
 
 class EventSerializer(serializers.ModelSerializer):
     class Meta:

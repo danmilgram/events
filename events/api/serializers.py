@@ -47,4 +47,7 @@ class ParticipantSerializer(serializers.ModelSerializer):
         if q_participants >= data["event"].room.capacity:
             raise serializers.ValidationError("Event room is full")
 
+        if data["event"].type == "PR":
+            raise serializers.ValidationError("Can't join private event")            
+
         return data

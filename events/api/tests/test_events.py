@@ -1,7 +1,6 @@
 import json
 
 from datetime import datetime, timedelta
-from multiprocessing import Event
 
 from django.test import TestCase
 from rest_framework.test import APIClient

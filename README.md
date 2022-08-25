@@ -1,4 +1,17 @@
-# API events
+# API events - Plataforma.IO pre assessment
+
+API Endpints are RESTFull, 
+
+Create ROOM : POST /rooms/
+Delete ROOM : DELETE /rooms/{room_id}/
+
+List Public EVENTS: GET /events/
+Create EVENT: POST /events/
+
+Create PARTICIPANT (Join EVENT): POST /participants/
+Delete PARTICIPANT (Abandon EVENT): DELETE /participants/ 
+
+-----------------------------------------
 
 # How to INSTALL DEPENDENCIES and RUN
 
@@ -11,8 +24,24 @@
     pip install djangorestframework
     pip install django_extensions
 
-4. # RUN API
+4. # Create Django Rest Framework superuser
+    python manage.py createsuperuser --email admin@example.com --username admin
+
+5. # RUN API
     python manage.py runserver
 
-# How to RUN TESTS
+6. # SEE API DOCS
+    go to http://127.0.0.1:8000/ , login with superuser, create users(bussiness or customers) and manually test the endpoints
+
+7. # HAVE FUN :)
+
+-----------------------------------------
+
+# How to RUN UNIT TESTS
     python manage.py test api/tests
+
+
+
+
+
+

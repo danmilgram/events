@@ -3,12 +3,15 @@
 API Endpints are RESTFull, 
 
 Create ROOM : POST /rooms/
+
 Delete ROOM : DELETE /rooms/{room_id}/
 
 List Public EVENTS: GET /events/
+
 Create EVENT: POST /events/
 
 Create PARTICIPANT (Join EVENT): POST /participants/
+
 Delete PARTICIPANT (Abandon EVENT): DELETE /participants/ 
 
 -----------------------------------------

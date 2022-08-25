@@ -1,4 +1,4 @@
-# API events - Plataforma.IO pre assessment
+# API events
 
 API Endpints are RESTFull, 
 
